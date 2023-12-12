@@ -23,6 +23,9 @@ export default function Navbar(props) {
               {/* <a className="nav-link" href="/">{props.aboutText}</a> */}
               <Link className="nav-link" to="/about">{props.aboutText}</Link>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="https://github.com/Samya-S/TextUtils" target='black'>Our Source Code</Link>
+            </li>
           </ul>
 
           {/* <form className="d-flex" role="search">
