@@ -4,7 +4,7 @@ TextUtils is a word counter and a character counting utility which can be used t
 
 This project was made with [Create React App](https://github.com/facebook/create-react-app) using React framework.
 
-Below are the documentation to run, build and deploy this app. The application is also deployed at: https://textutils-ss.netlify.app/
+Below are the documentation to run, build and deploy this app. Remember to generate the node_modules folder to reinstall the project dependencies for this app using `npm install`. The application is also deployed at: https://textutils-ss.netlify.app/
 
 ## Available Scripts
 
