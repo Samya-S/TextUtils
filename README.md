@@ -2,13 +2,14 @@
 
 TextUtils is a word counter and a character counting utility which can be used to manipulate your text in the way you want. You can remove extra spaces, copy the manipulated text as well as convert your text to lowercase or to UPPERCASE.
 The application is currently hosted at: https://textutils-ss.netlify.app/
+
+This project was made with [Create React App](https://github.com/facebook/create-react-app) using React framework. This app uses react `function based components`.
+
 ## Table of Contents
 
 - [Installation](#installation)
 - [Run dev environment](#run-dev-environment)
 - [Available Scripts](#available-scripts)
-
-This project was made with [Create React App](https://github.com/facebook/create-react-app) using React framework. This app uses react `function based components`.
 
 ## Installation
 
@@ -37,7 +38,8 @@ This project was made with [Create React App](https://github.com/facebook/create
     `Make sure to have nodejs and npm installed`
 
 ## Run dev environment
- Use the following command to run:
+
+Use the following command to run:
 
   ```bash
   npm start
