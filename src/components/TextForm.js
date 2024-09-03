@@ -15,6 +15,13 @@ export default function TextForm(props) {
         setText(newText); // correct way to change the state
         props.showAlert("Converted to lowercase", "Success")
     }
+
+    const handleTitleCaseClick = () =>{
+        console.log("Title case button was clicked and textBox contains: " + text);
+        let newText = text.split(' ').map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()).join(' ');
+        setText(newText); // correct way to change the state
+        props.showAlert("Converted to Title Case", "Success")
+    }
     
     const handleClearClick = () =>{
         console.log("text cleared");
@@ -62,6 +69,7 @@ export default function TextForm(props) {
             </div>
             <button disabled={text.length===0} className="btn btn-primary mx-2 my-2" onClick={handleUPCclick}>Convert to UPPERCASE</button>  
             <button disabled={text.length===0} className="btn btn-primary mx-2 my-2" onClick={handleLOCclick}>Convert to lowercase</button>  
+            <button disabled={text.length===0} className="btn btn-primary mx-2 my-2" onClick={handleTitleCaseClick}>Convert to TitleCase</button>
             <button disabled={text.length===0} className="btn btn-primary mx-2 my-2" onClick={handleClearClick}>Clear text</button>  
             <button disabled={text.length===0} className="btn btn-primary mx-2 my-2" onClick={handleCopy}>Copy text</button>  
             <button disabled={text.length===0} className="btn btn-primary mx-2 my-2" onClick={handleExtraSpaces}>Remove extra spaces</button>  
